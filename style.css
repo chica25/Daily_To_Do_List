@@ -1,4 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+
 body {
     /* font-family: 'Kaushan Script', cursive; */
-    font-family: verdana;
+    background-color: rgb(242, 213, 99);
+}
+
+header {
+    font-size: 36px;
+}
+
+header,
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input, form button{
+    padding: 0.5rem;
+    font-size: 2rm;
+    background: white;
+}
+
+h1{
+    font-size: 40px;
+}
+
+form button{
+    color: pink;
+    background: white;
+    cursor: pointer;
+    transition: qll 0.3s ease;
+}
+form button:hover{
+    background: pink;
+    color: white;
 }
