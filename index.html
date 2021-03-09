@@ -7,24 +7,27 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <title>To Do list</title>
+    <title>To Do App</title>
 </head>
 <body>
     
     <header>
-        <h1>To do list</h1>
+        <h1>Daily Task</h1>
     </header>
 
     <form>
         <input type="text" class="input"><br><br>
         <button class="button" type="submit">button
-            <!-- <i class="fas fa-adjust"></i> -->
+            <i class="fas fa-trash"></i>
         </button>    
     </form>
-    <div class="todo-container">
-        <ul class="todo-list"></ul>
+    <div class="container">
+        <ul class="list"></ul>
+        <li></li>
+        <button>Delete</button>
+        <button>Completed</button>
     </div>
 
-    <script src="/todos.js"></script>
+    <script src="todos.js"></script>
 </body>
 </html>

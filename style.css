@@ -36,12 +36,12 @@ h1{
 }
 
 form button{
-    color: pink;
-    background: white;
+    color: white;
+    background: pink;
     cursor: pointer;
     transition: qll 0.3s ease;
 }
 form button:hover{
-    background: pink;
-    color: white;
+    background: white;
+    color: pink;
 }
