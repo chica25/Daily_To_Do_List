@@ -17,17 +17,28 @@
     const newForm = document.querySelector('.add')
     const task = document.querySelector('.task')
 
-    const createTemplate = (todo) => {
+    const createTemplate = (todoTask) => {
         const html = `
         <li class="list-group-item d-flex justify-content-between align-items-center">
-         <span>${todo}</span>
-        <i class="fas fa-minus-circle""></i>`;
+         <span>${todoTask}</span>
+        <i class="fas fa-trash"></i>`;
 
     task.innerHTML += html
 }
 
     newForm.addEventListener('submit', e => {
         e.preventDefault();
-        const todo = newForm.add.value.trim();
-        console.log(todo)
+        const todoTask = newForm.add.value.trim();
+        // console.log(todo)
+        if(todoTask.length){
+            createTemplate(todoTask)
+            newForm.reset();
+        }
+        // createTemplate(todo)
+    });
+
+    // delete tasks
+    task.addEventListener('click', e => {
+        if(e.target.classList.contains('delete'))
+            e.target.parentElement.remove();
     })
