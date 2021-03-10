@@ -1,12 +1,7 @@
- body {
-    font-family: 'Homemade Apple', cursive;
- }
-
-
- /* task styling */
 
 body {
     background: #FF8B94;
+    font-family: 'Homemade Apple', cursive;
 }
 
 h1 {
@@ -33,52 +28,6 @@ input[type=text]:focus{
     cursor: pointer;
 }
 
- /* music
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 18px;
-    font-family: helvetica;
-    background-color: #d6bde4;
-} */
-
-/* .container {
-    height: 100vh;
-    width: 100%;
-    
+.filtered{
+    display: none !important;
 }
-
-h1 {
-    font-family: helvetica;
-    color: white;
-    text-align: center;
-    padding: 25px 25px;
-}
-
-p {
-    /* font-style: bold; */
-    color: white;
-    padding: 25px 25px;
-    text-align: left;
-}
-
-.play-btn {
-    float: left;
-    margin-left: 6%;
-    margin-top: 120px;
-    align-items: center;
-}
-.play-btn p {
-    font-size: 18px;
-    color: white;
-    font-weight: 400px;
-}
-
-#icon {
-    width: 80px;
-    cursor: pointer;
-}
-
- */
-
