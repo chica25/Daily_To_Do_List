@@ -1,11 +1,19 @@
 
 body {
-    background: #FF8B94;
-    font-family: 'Homemade Apple', cursive;
+    background: #FFAAA5;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
 }
 
 h1 {
-    font-family: helvetica;
+    font-family: Bookman;
+    font-size: 40px;
+}
+
+.new-task-title {
+    font-family: Bookman;
+font-size: 26px;
+color: white;
 }
 
 .container {
@@ -14,14 +22,14 @@ h1 {
 
 input[type=text],
 input[type=text]:focus{
-    color: black;
+    color: grey;
     border: none;
     background: rgba(0, 0, 0, 0, 0.2);
     max-width: 400px;
 }
 
 .task li {
-    background: pink;
+    background: #FFAAA5;
 }
 
 .delete {
@@ -30,4 +38,22 @@ input[type=text]:focus{
 
 .filtered{
     display: none !important;
+}
+
+.plant {
+    position: fixed;
+   top: 1%;
+    left: -1%;
+    width: 250px;
+    margin: 35px 35px;
+
+}
+
+.coffee {
+    position: fixed;
+    bottom: 15%;
+    right: -1%;
+    width: 250px;
+    margin: 35px 35px;
+
 }
