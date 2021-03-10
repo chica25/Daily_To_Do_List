@@ -6,6 +6,7 @@ const taskList = document.querySelector('.list')
 
 //Even Listeners
 button.addEventListener('click', newTodo)
+taskList.addEventListener('click', deleteTask)
 
 //functions
 
@@ -16,20 +17,37 @@ function newTodo(e){
     const todoDiv = document.createElement('div')
     todoDiv.classList.add('todo')
     const newTodo = document.createElement('li')
-    newTodo.innerText = 'hey'
+    newTodo.innerText = input.value
     newTodo.classList.add('item')
     todoDiv.appendChild(newTodo)
     //Completed button
-    const completedButton = document.createElement('button');
-    completedButton.innerHTML = '<li class="fas fa-check"></li>'
-    completedButton.classList.add('completed-btn');
-    todoDiv.appendChild(completedButton);
+    const completeButton = document.createElement('button');
+    completeButton.innerHTML = '<li class="fas fa-check"></li>'
+    completeButton.classList.add('complete-btn');
+    todoDiv.appendChild(completeButton);
     //deleted button
     const deleteTask = document.createElement('button');
     deleteTask.innerHTML = '<li class="fas fa-trash"></li>'
-    deleteTask.classList.add('completed-btn');
+    deleteTask.classList.add('delete-btn');
     todoDiv.appendChild(deleteTask);
     // append List
     taskList.appendChild(todoDiv)
+    // clear input value
+    input.value = "";
 
+}
+
+function deleteTask(e) {
+const item = e.target;
+//delete task
+    if(item.classList[0] === 'delete-btn')  {
+        const task = item.parentElement;
+        task.remove();
+    }
+}
+
+
+// check complete
+if(item.classList[0] === "complete-btn") {
+    task.classList.toggle("completed");
 }
