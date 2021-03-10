@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">   
    
     <link rel="stylesheet" href="./style.css">
     <title>To Do App</title>
 </head>
-<body>
-    <h1>Music Playlist</h1>
+    <body>
+        <div class="container">
+            <header class="text-center text-light my-4">
+                <h1 class="mb-4">To Do App</h1>
+                <form class="search">
+                    <input class="form-control m-auto" type="text" name="search" placeholder="search tasks">
+                </form>
+            </header>
 
-    <div class="right-col">
-        <p>Click here to listen</p>
-        <img src="images/play_button.png" alt="">
-    </div>
+            <ul class="list-group todos mx-auto text-light">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>play Mariokart</span>
+                    <i class="far fa-trash-alt delete"></i>
+                </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>Make a veggie pie</span>
+                <i class="far fa-trash-alt delete"></i>
+                </li>
+            </ul>
 
-</body>
+            <form class="add text-center my-4">
+                <label class="text-light">Add new task...</label>
+                <input class="form-control m-auto" type="text" name="add" />
+            </form>
+
+
+        </div>
+         <h1>Daily Task</h1>
+
+         <!-- daily task code -->
+
+
+
+
+
+
+
+
+
+<!-- music code -->
+        <!-- <div class="play-btn">
+            <p>Click here to listen</p>
+            <img src="images/play_button.png" id="icon" alt="play button">
+        </div>
+
+        <audio id="song">
+            <source src="morning.mp3" type="audio/mp3">
+        </audio> -->
+
+        <script src="dailyTask.js"></script>
+        
+    </body>
 </html>
